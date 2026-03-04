@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            background-color: black;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macros Search</title>
+    <link rel="stylesheet" href="styler.css">
 </head>
 <body>
 
-    <h1>Hello, I am testing my website 👋</h1>
-    <p>Welcome to my personal website.</p>
+    <header>
+        <h1>Macros Search</h1>
+    </header>
 
-    <button onclick="alert('Thanks for visiting!')">
-        Click Me
-    </button>
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Search food...">
+            <button>Search</button>
+        </div>
+
+        <!-- Bubble button below -->
+        <div class="bubble-container">
+            <button class="bubble-btn"><img src="Picture\McDonald_Logo.png" alt="McDonald" class="btn-icon">McDonald</button>
+            <button class="bubble-btn">KFC</button>
+        </div>
+
+    </main>
 
 </body>
 </html>
