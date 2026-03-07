@@ -78,42 +78,47 @@ button:hover {
     gap: 20px;
 }
 
-/* Bubble style */
+/* Bubble button style */
 .bubble-btn {
     width: 150px;
     height: 60px;
     border-radius: 50px;
     border: none;
-    background-color: #f5f5f5;
-    color: #000;
     font-size: 1rem;
+    font-weight: bold;
+    color: black;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    display: flex;               /* use flexbox inside button */
-    align-items: center;         /* vertical center */
-    justify-content: center;     /* horizontal center */
-    gap: 8px;                    /* space between image and text */
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Resize image inside bubble button */
-.bubble-btn img {
-    width: 24px;          /* set the width of the icon */
-    height: 24px;         /* set the height */
-    object-fit: contain;   /* keep aspect ratio */
+/* McDonald background image */
+.bubble-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("Picture/McDonald_Logo.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35; /* controls transparency */
 }
 
-/* Hover effect */
+/* Keep text above the image */
+.bubble-btn span {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+/* Bubble hover effect */
 .bubble-btn:hover {
     transform: scale(1.05);
-    background-color: #000;
-    color: #fff;
-}
-
-/* Image inside the button */
-.btn-icon {
-    width: 24px;          /* set the width of the icon */
-    height: 24px;         /* set the height */
-    object-fit: contain;   /* keeps the aspect ratio without stretching */
 }
