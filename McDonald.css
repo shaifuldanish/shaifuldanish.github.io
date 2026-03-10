@@ -45,3 +45,7 @@ tr:nth-child(even) {
     /* font-size: 1.2rem;
     margin-bottom: 10px; */
 }
+
+.table-section {
+    margin-bottom: 100px;
+}
